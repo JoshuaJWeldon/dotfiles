@@ -1,6 +1,10 @@
 "Syntax
 syntax on
 
+"Highlight Current Line
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
 "Ugly Mac ESC, I refuse to use.
 inoremap jk <ESC>
 inoremap kj <ESC>
@@ -16,7 +20,10 @@ set autoindent
 set colorcolumn=80
 
 "Search
+set hlsearch
 set incsearch
+hi Search ctermbg=15
+hi Search ctermfg=0
 set ignorecase smartcase
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
