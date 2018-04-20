@@ -2,7 +2,7 @@
 # Bash Profile
 
 # Prompt
-export PS1="~ "
+export PS1="> "
 
 #Homebrew
 PATH=~/Developer/brew/bin:$PATH
