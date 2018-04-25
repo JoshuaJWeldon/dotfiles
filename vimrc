@@ -1,6 +1,11 @@
 "Syntax
 syntax on
 
+" Line numbers
+set number
+hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
+    \ guifg=DarkGrey guibg=NONE
+
 "Highlight Current Line
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
@@ -27,3 +32,8 @@ hi Search ctermfg=0
 set ignorecase smartcase
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
+" Spell check settings
+set spelllang=en
+set spellfile=$HOME/.en.utf-8.add
+hi clear SpellBad
+hi SpellBad cterm=underline
