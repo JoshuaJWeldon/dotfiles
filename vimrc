@@ -1,3 +1,10 @@
+"Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-rails'
+call vundle#end()
+
 "Syntax
 syntax on
 

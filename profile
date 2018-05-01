@@ -8,3 +8,6 @@ export PS1="> "
 PATH=~/Developer/brew/bin:$PATH
 source ~/Developer/brew/etc/bash_completion
 
+#Splunk
+PATH=~/Applications/Splunk/bin:$PATH
+
