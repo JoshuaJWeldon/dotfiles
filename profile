@@ -2,7 +2,7 @@
 # Bash Profile
 
 # Prompt
-export PS1="\[\033[91m>\033[92m>\033[93m>\033[94m> \033[0m\]"
+export PS1="\[\033[91m\]>\[\033[92m\]>\[\033[93m\]>\[\033[94m\]> \[\033[0m\]"
 
 #Homebrew
 PATH=~/Developer/brew/bin:$PATH
