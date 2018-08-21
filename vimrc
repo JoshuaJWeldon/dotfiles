@@ -1,28 +1,57 @@
-" Syntax
 syntax on
 
-" Line numbers
-set number
-hi LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
-    \ guifg=DarkGrey guibg=NONE
+"""
+""" VUNDLE
+"""
 
-" Highlight Current Line
-set cursorline
-hi CursorLine term=bold cterm=bold guibg=Grey40
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+  Plugin 'VundleVim/Vundle.vim'
+  Plugin 'tpope/vim-rails'
+  Plugin 'scrooloose/nerdtree'
+call vundle#end()
 
-" Mac ESC touch key, I refuse to use.
+
+"""
+""" KEY MAPPINGS
+"""
+
+" ESC
 inoremap jk <ESC>
 inoremap kj <ESC>
 
-" Tabs are bad, spaces are better
+
+"""
+""" SETTINGS
+"""
+
+" Spacing
 set expandtab
 set smarttab
 set tabstop=2 
 set shiftwidth=2 
 set autoindent
 
-" Perfect width
+" Width
 set colorcolumn=80
+
+" Line Numbers
+set number
+
+" Current Line
+set cursorline
+
+" Spell Check
+set spelllang=en
+set spellfile=$HOME/.en.utf-8.add
+
+
+"""
+""" HIGHLIGHTING
+"""
+
+" Current Line
+hi CursorLine cterm=bold
 
 " Search
 hi Search ctermbg=White ctermfg=Black
@@ -36,17 +65,10 @@ hi Comment ctermfg=Green cterm=NONE
 hi Number ctermfg=Blue cterm=NONE
 hi Float ctermfg=Blue cterm=NONE
 
-" Spell check settings
-set spelllang=en
-set spellfile=$HOME/.en.utf-8.add
-hi clear SpellBad
-hi SpellBad cterm=underline
+" Line Numbers
+hi LineNr ctermfg=Gray ctermbg=NONE
 
-"Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-  Plugin 'VundleVim/Vundle.vim'
-  Plugin 'tpope/vim-rails'
-  Plugin 'scrooloose/nerdtree'
-call vundle#end()
+" Spell Check
+hi clear SpellBad
+hi SpellBad cterm=underline,bold
 
