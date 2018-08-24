@@ -20,6 +20,9 @@ call vundle#end()
 inoremap jk <ESC>
 inoremap kj <ESC>
 
+" Search
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 
 """
 """ SETTINGS
@@ -45,6 +48,14 @@ set cursorline
 set spelllang=en
 set spellfile=$HOME/.en.utf-8.add
 
+" Search
+set hlsearch
+set incsearch
+set ignorecase 
+set smartcase
+
+" NERDTree
+let NERDTreeQuitOnOpen=1
 
 """
 """ HIGHLIGHTING
@@ -55,8 +66,7 @@ hi CursorLine cterm=bold
 
 " Search
 hi Search ctermbg=White ctermfg=Black
-set ignorecase smartcase
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+hi incsearch ctermbg=Black ctermfg=White
 
 " Comments
 hi Comment ctermfg=Green cterm=NONE
