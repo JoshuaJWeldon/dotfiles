@@ -9,7 +9,8 @@ PATH=~/Developer/brew/bin:$PATH
 source ~/Developer/brew/etc/bash_completion
 
 #Splunk
-PATH=~/Applications/Splunk/bin:$PATH
+PATH=/Applications/Splunk/bin:$PATH
+SPLUNK_HOME=/Applications/Splunk/
 
 # added by Anaconda3 5.2.0 installer
 export PATH="/Users/joshuajweldon/anaconda3/bin:$PATH"

@@ -32,8 +32,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Spacing
 set expandtab
 set smarttab
-set tabstop=2 
-set shiftwidth=2 
+set tabstop=4 
+set shiftwidth=4 
 set autoindent
 
 " Width
@@ -82,4 +82,11 @@ hi LineNr ctermfg=Gray ctermbg=NONE
 " Spell Check
 hi clear SpellBad
 hi SpellBad cterm=underline,bold
+
+"""
+""" FILE PREFERENCES
+"""
+
+" Markdown
+autocmd FileType markdown setlocal spell
 
